@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const TabsWrapper = styled.div`
   .ant-tabs-ink-bar {
-    background-color: #00532A;
+    background-color: #00532a;
     height: 5px;
   }
   .ant-tabs-nav .ant-tabs-tab {
@@ -14,11 +14,11 @@ export const TabsWrapper = styled.div`
     line-height: 1;
   }
   .ant-tabs-nav .ant-tabs-tab-active {
-    color: #00532A;
+    color: #00532a;
   }
   .ant-tabs-tab,
   .ant-tabs-tab:hover {
-    color: #8E8E8E;
+    color: #8e8e8e;
   }
   .ant-tabs-tab:hover {
     background-color: #fafafa;
@@ -49,10 +49,11 @@ export const InstructorImage = styled.div`
 `
 
 export const InstructorName = styled.div`
-  color: #00532A;
+  color: #00532a;
   font-weight: bold;
   font-size: 1em;
   word-break: break-word;
+  cursor: pointer;
 `
 
 export const InstructorDetailUl = styled.li`
@@ -80,7 +81,7 @@ export const CourseInstructorCard = styled.div`
 `
 
 export const CourseInstructorCardTitle = styled.span`
-  color: #00532A;
+  color: #00532a;
   font-size: 1.33em;
 `
 
@@ -95,17 +96,16 @@ export const CourseRelateDetailWrapper = styled.div`
 export const CourseRelateWrapper = styled.div`
   padding: 5px;
   border-radius: 4px;
-  background: #F2F8FA;
+  background: #f2f8fa;
   cursor: pointer;
   &:hover {
     background: #e5e5e5;
   }
 `
 
-
 export const CourseRelateTitle = styled.span`
   font-weight: 300;
-  color: #00532A;
+  color: #00532a;
   font-size: 1em;
 `
 

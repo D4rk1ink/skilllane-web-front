@@ -23,16 +23,16 @@ export const CourseCard = styled.div`
   height: 100%;
   padding: 0 15px;
   border: 1px solid #aaa;
-  ${props => props.active === true
-    ? `
+  ${(props) =>
+    props.active === true
+      ? `
       border: 1px solid #024825;
       border-top-width: 5px;
       padding-top: 15px;
     `
-    : `
+      : `
       padding-top: 20px;
-    `
-  }
+    `}
 `
 
 export const PurchasePrice = styled.span`
@@ -53,13 +53,13 @@ export const EnrollButton = styled.button`
   cursor: pointer;
   padding: 12px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  ${props => props.active === true
-    ? `
+  ${(props) =>
+    props.active === true
+      ? `
       color: #fff;
       background: #024825;
     `
-    : ``
-  }
+      : ``}
   &:hover {
     color: #fff;
     background: #024825;
@@ -71,10 +71,7 @@ export const IconWrapper = styled.div`
   width: 16px;
   display: flex;
   justify-content: center;
-  ${props => props.color
-    ? `color: ${props.color}`
-    : ``
-  }
+  ${(props) => (props.color ? `color: ${props.color}` : ``)}
 `
 
 export const DetailRow = styled.div`

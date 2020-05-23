@@ -25,6 +25,7 @@ export const SubHeaderIcon = styled.span`
 `
 
 export const SubHeaderText = styled.span`
+  margin-left: 5px;
   color: #d13434;
 `
 
@@ -35,6 +36,9 @@ export const SubHeaderWrapper = styled.div`
 export const HeaderText = styled.h1`
   color: #676767;
   margin-bottom: 10px;
+  @media (max-width: 767px) {
+    font-size: 1.33em;
+  }
 `
 
 export const ButtonDegree = styled.a`
