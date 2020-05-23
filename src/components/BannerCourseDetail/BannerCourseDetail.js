@@ -29,22 +29,33 @@ const SocialShareButton = () => {
   )
 }
 
-const Stars = () => {
+const Stars = ({ rating }) => {
+  const rest = +rating - Math.floor(+rating)
+  console.log()
+  const arr = Array(Math.floor(+rating)).fill(100)
+  if (rest > 0) {
+    arr.push(rest * 100)
+  }
   return (
     <Row>
       {Array(5)
         .fill(null)
-        .map((v, idx) => (
-          <Col key={idx}>
-            <Star>
-              <img
-                src={
-                  'https://www.skilllane.com/assets/raty/star-filled-625a2874bb73bbd9bc05639104f21c4e5563a3a5f3b933180ff4be08adeb9aad.svg'
-                }
-              />
-            </Star>
-          </Col>
-        ))}
+        .map((v, idx) => {
+          const p = 22 - (arr[idx] / 100) * 22
+          console.log(arr[idx])
+          return (
+            <Col key={idx}>
+              <Star>
+                <img
+                  src={
+                    'https://www.skilllane.com/assets/raty/star-filled-625a2874bb73bbd9bc05639104f21c4e5563a3a5f3b933180ff4be08adeb9aad.svg'
+                  }
+                  style={{ clipPath: `inset(0px ${p.toFixed(2)}px 0px 0px)` }}
+                />
+              </Star>
+            </Col>
+          )
+        })}
     </Row>
   )
 }
@@ -91,7 +102,7 @@ export const BannerCourseDetail = (props) => {
         </Row>
         <Row align={'middle'}>
           <Col>
-            <Stars />
+            <Stars rating={rating} />
           </Col>
           <Col>
             <ReviewText>

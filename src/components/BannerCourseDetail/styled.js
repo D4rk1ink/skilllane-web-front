@@ -67,7 +67,7 @@ export const Star = styled.div`
   line-height: 1;
   width: 22px;
   height: 22px;
-  background-image: url(/assets/raty/star-stroke-5aa3077ffda78ce9885e9a11639d53f22c0fe35392066a7fdcb2a53bc404eb8f.svg);
+  background-image: url(https://www.skilllane.com/assets/raty/star-stroke-5aa3077ffda78ce9885e9a11639d53f22c0fe35392066a7fdcb2a53bc404eb8f.svg);
   background-repeat: no-repeat;
   margin-right: 2px;
 `

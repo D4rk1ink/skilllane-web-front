@@ -7,7 +7,7 @@ import { ContentCourse } from '../../components/ContentCourse'
 import { ContentDetailCourse } from '../../components/ContentDetailCourse'
 
 const course = {
-  rating: 4.9,
+  rating: 4.5,
   reviewed: 485,
   degree: 'ปริญญาโทบริหารธุรกิจ สาขา Business Innovation',
   degreeHref: 'https://www.skilllane.com/academic/tuxsa/businessinnovation',
