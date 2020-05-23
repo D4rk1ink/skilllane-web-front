@@ -1,10 +1,36 @@
+@font-face {
+  font-family: 'Helvetica';
+  font-weight: 100;
+  src: local('Helvetica'), url(./fonts/HelveticaNeue-Thin.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  font-weight: 200;
+  src: local('Helvetica'), url(./fonts/HelveticaNeue-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ThaiSansNeue';
+  font-weight: 100;
+  src: local('ThaiSansNeue'), url(./fonts/ThaiSansNeue-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'ThaiSansNeue';
+  font-weight: 400;
+  src: local('ThaiSansNeue'), url(./fonts/ThaiSansNeue-Regular.ttf) format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-size: 18px;
+  font-family: 'ThaiSansNeue', 'Helvetica';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #676767;
 }
 
 code {
