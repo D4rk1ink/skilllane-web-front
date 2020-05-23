@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a2bfe27171cd6f23fe8864f569f5eadf",
+    "revision": "58e1fe4c72be6139986191274fb94d24",
     "url": "/skilllane-web-front/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/skilllane-web-front/static/css/2.cbeea887.chunk.css"
   },
   {
-    "revision": "13ec214d9c783cb1b615",
+    "revision": "a3c5559d02897e95dfab",
     "url": "/skilllane-web-front/static/css/main.e29a99f8.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/skilllane-web-front/static/js/2.26f872f9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "13ec214d9c783cb1b615",
-    "url": "/skilllane-web-front/static/js/main.c81400c3.chunk.js"
+    "revision": "a3c5559d02897e95dfab",
+    "url": "/skilllane-web-front/static/js/main.9178ac4f.chunk.js"
   },
   {
     "revision": "4e6083f7c86a5d6badcc",

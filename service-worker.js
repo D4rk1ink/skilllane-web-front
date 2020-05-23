@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/skilllane-web-front/precache-manifest.918c2b5a029a1ab5e9fe0c280e1d8629.js"
+  "/skilllane-web-front/precache-manifest.b41bc9e6154c233103aee3657fe4d020.js"
 );
 
 self.addEventListener('message', (event) => {
