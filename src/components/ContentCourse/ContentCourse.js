@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from 'reactstrap'
 import { Row, Col } from 'antd'
+import { useMediaQuery } from 'react-responsive'
 
 import {
   VideContainer,
@@ -81,10 +82,17 @@ const DetailList = ({ list }) => {
 }
 
 export const ContentCourse = (props) => {
+  const isMaxLargeDesktop = useMediaQuery({
+    query: '(max-width: 1140px)',
+  })
+  const isSmallDesktop = useMediaQuery({
+    query: '(min-width: 576px)',
+  })
+  const rowReverse = isSmallDesktop ? { flexDirection: 'row-reverse' } : {}
   return (
-    <Container>
+    <Container fluid={isMaxLargeDesktop}>
       <Row gutter={15}>
-        <Col xl={12} lg={24}>
+        <Col xl={12} md={24} style={{ paddingBottom: '30px' }}>
           <VideContainer>
             <VideBackground>
               <img
@@ -95,23 +103,27 @@ export const ContentCourse = (props) => {
             </VideBackground>
           </VideContainer>
         </Col>
-        <Col xl={12} lg={24}>
+        <Col xl={12} md={24}>
           <CourseCardWrapper>
             <Row gutter={15} style={{ height: '100%' }}>
-              <Col xl={12} lg={24}>
+              <Col xl={12} md={24} xs={24} style={{ paddingBottom: '30px' }}>
                 <CourseCard>
-                  <Row justify={'center'} align={'middle'} gutter={[0, 8]}>
-                    <Col>
-                      <PurchasePrice>1,500 บาท</PurchasePrice>
+                  <Row justify={'center'} align={'middle'} gutter={[15, 8]} style={{...rowReverse}}>
+                    <Col xl={24} md={12} xs={24}>
+                      <Row justify={'center'} align={'middle'} gutter={[0, 8]}>
+                        <Col>
+                          <PurchasePrice>1,500 บาท</PurchasePrice>
+                        </Col>
+                      </Row>
+                      <Row justify={'center'} align={'middle'} gutter={[0, 8]}>
+                        <Col span={24}>
+                          <EnrollButton>
+                            ชำระเงินเรียนไม่เก็บหน่วยกิต
+                          </EnrollButton>
+                        </Col>
+                      </Row>
                     </Col>
-                  </Row>
-                  <Row justify={'center'} align={'middle'} gutter={[0, 8]}>
-                    <Col span={24}>
-                      <EnrollButton>ชำระเงินเรียนไม่เก็บหน่วยกิต</EnrollButton>
-                    </Col>
-                  </Row>
-                  <Row justify={'center'} align={'middle'} gutter={[0, 8]}>
-                    <Col>
+                    <Col xl={24} md={12} xs={24}>
                       <DetailList
                         list={[
                           {
@@ -130,8 +142,7 @@ export const ContentCourse = (props) => {
                           { isCheck: false, text: 'ข้อสอบทั้งหมด 1 ข้อสอบ' },
                           {
                             isCheck: false,
-                            text:
-                              'เก็บหน่วยกิตเรียนปริญญาโทเก็บหน่วยกิตเรียนปริญญาโทเก็บหน่วยกิตเรียนปริญญาโทเก็บหน่วยกิตเรียนปริญญาโทเก็บหน่วยกิตเรียนปริญญาโทเก็บหน่วยกิตเรียนปริญญาโทเก็บหน่วยกิตเรียนปริญญาโทเก็บหน่วยกิตเรียนปริญญาโทเก็บหน่วยกิตเรียนปริญญาโทเก็บหน่วยกิตเรียนปริญญาโท',
+                            text: 'เก็บหน่วยกิตเรียนปริญญาโท',
                           },
                           {
                             isCheck: false,
@@ -143,20 +154,24 @@ export const ContentCourse = (props) => {
                   </Row>
                 </CourseCard>
               </Col>
-              <Col xl={12} lg={24}>
+              <Col xl={12} md={24} xs={24} style={{ paddingBottom: '30px' }}>
                 <CourseCard active={true}>
-                  <Row justify={'center'} align={'middle'} gutter={[0, 8]}>
-                    <Col>
-                      <PurchasePrice>4,500 บาท</PurchasePrice>
+                  <Row justify={ 'center'} align={'middle'} gutter={[15, 8]} style={{...rowReverse}}>
+                    <Col xl={24} md={12} xs={24}>
+                      <Row justify={'center'} align={'middle'} gutter={[0, 8]}>
+                        <Col>
+                          <PurchasePrice>4,500 บาท</PurchasePrice>
+                        </Col>
+                      </Row>
+                      <Row justify={'center'} align={'middle'} gutter={[0, 8]}>
+                        <Col span={24}>
+                          <EnrollButton active={true}>
+                            ชำระเงินเรียนเก็บหน่วยกิต
+                          </EnrollButton>
+                        </Col>
+                      </Row>
                     </Col>
-                  </Row>
-                  <Row justify={'center'} align={'middle'} gutter={[0, 8]}>
-                    <Col span={24}>
-                      <EnrollButton active={true}>ชำระเงินเรียนเก็บหน่วยกิต</EnrollButton>
-                    </Col>
-                  </Row>
-                  <Row justify={'center'} align={'middle'} gutter={[0, 8]}>
-                    <Col>
+                    <Col xl={24} md={12} xs={24}>
                       <DetailList
                         list={[
                           {
