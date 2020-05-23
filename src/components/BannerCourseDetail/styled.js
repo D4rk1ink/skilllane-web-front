@@ -86,7 +86,7 @@ export const ShareButton = styled.div`
   padding: 2px 8px;
   border-color: #00532a;
   color: #00532a;
-  cursor: point;
+  cursor: pointer;
 `
 
 export const ShareSpanIcon = styled.span`
