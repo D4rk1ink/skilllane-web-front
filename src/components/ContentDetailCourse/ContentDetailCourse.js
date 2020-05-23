@@ -58,11 +58,11 @@ const Instructor = ({ instructor }) => {
     },
     {
       icon: CommentIcon,
-      text: `${instructor.rating} รีวิว`,
+      text: `${instructor.reviewed} รีวิว`,
     },
     {
       icon: PlayIcon,
-      text: `${instructor.rating} คอร์ส`,
+      text: `${instructor.totalCourse} คอร์ส`,
     },
   ]
   const Subs = subs.map((sub) => {
