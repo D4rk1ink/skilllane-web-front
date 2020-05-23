@@ -4,6 +4,7 @@ import { Row, Col } from 'antd'
 
 import { BannerCourseDetail } from '../../components/BannerCourseDetail'
 import { ContentCourse } from '../../components/ContentCourse'
+import { ContentDetailCourse } from '../../components/ContentDetailCourse'
 
 export class Course extends Component {
   render() {
@@ -17,6 +18,11 @@ export class Course extends Component {
         <Row>
           <Col span={24}>
             <ContentCourse />
+          </Col>
+        </Row>
+        <Row>
+          <Col span={24}>
+            <ContentDetailCourse />
           </Col>
         </Row>
       </Container>
