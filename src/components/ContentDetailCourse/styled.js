@@ -32,8 +32,8 @@ export const IconWrapper = styled.div`
   width: 1em;
 `
 
-export const InstructorWrapper = styled.div`
-  &:not(last-child) {
+export const TitleWrapper = styled.div`
+  &:not(:last-child) {
     padding-bottom: 16px;
     margin-bottom: 16px;
     border-bottom: 1px solid #f0f0f0;
@@ -82,4 +82,34 @@ export const CourseInstructorCard = styled.div`
 export const CourseInstructorCardTitle = styled.span`
   color: #00532A;
   font-size: 1.33em;
+`
+
+export const CourseRelateDetailWrapper = styled.div`
+  height: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+`
+
+export const CourseRelateWrapper = styled.div`
+  padding: 5px;
+  border-radius: 4px;
+  background: #F2F8FA;
+  cursor: pointer;
+  &:hover {
+    background: #e5e5e5;
+  }
+`
+
+
+export const CourseRelateTitle = styled.span`
+  font-weight: 300;
+  color: #00532A;
+  font-size: 1em;
+`
+
+export const CourseRelateInstructor = styled.span`
+  color: #555555;
+  font-size: 0.9em;
 `

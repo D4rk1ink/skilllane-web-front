@@ -6,14 +6,18 @@ import { useMediaQuery } from 'react-responsive'
 import {
   TabsWrapper,
   IconWrapper,
-  InstructorWrapper,
+  TitleWrapper,
   InstructorImage,
   InstructorName,
   InstructorSubText,
   InstructorDetailUl,
   InstructorDetailLi,
+  CourseRelateDetailWrapper,
   CourseInstructorCard,
   CourseInstructorCardTitle,
+  CourseRelateWrapper,
+  CourseRelateTitle,
+  CourseRelateInstructor,
 } from './styled'
 
 const { TabPane } = Tabs
@@ -106,7 +110,7 @@ const Instructor = ({ instructor }) => {
     },
   ]
   return (
-    <InstructorWrapper>
+    <TitleWrapper>
       <Row gutter={[8, 0]}>
         <Col lg={isExtraLargeDesktop ? 10 : 3}>
           <InstructorImage>
@@ -147,11 +151,37 @@ const Instructor = ({ instructor }) => {
           </InstructorDetailUl>
         </Col>
       </Row>
-    </InstructorWrapper>
+    </TitleWrapper>
+  )
+}
+
+const CourseRelate = ({ course }) => {
+  return (
+    <CourseRelateWrapper>
+      <Row gutter={8}>
+        <Col md={12}>
+          <img src={course.img} style={{ width: '100%' }} />
+        </Col>
+        <Col md={12}>
+        <CourseRelateDetailWrapper>
+                <CourseRelateTitle>{course.title}</CourseRelateTitle>
+                <CourseRelateInstructor>{course.instructor}</CourseRelateInstructor>
+              </CourseRelateDetailWrapper>
+        </Col>
+      </Row>
+    </CourseRelateWrapper>
   )
 }
 
 export const ContentDetailCourse = (props) => {
+  const courses = [
+    {
+      title: 'สำเร็จไวใน 7 ขั้นตอน',
+      img:
+        'https://skilllane.s3.amazonaws.com/courses/highlight_imgs/000/000/563/medium/web_%281%29.png?1487918239',
+      instructor: 'สิริลักษณ์ ตันศิริ (โค้ชสิริลักษณ์)',
+    },
+  ]
   const courseDetail = `
     การนำเสนอและการต่อรองเป็นเรื่องที่พวกเราทุกคนทำกันทุกวันอย่างไม่รู้ตัว แต่น้อยคนนักที่สามารถใช้ทักษะนี้ได้อย่างช่ำชอง ซึ่งถือว่าเป็นเรื่องที่เสริมโอกาสมากสำหรับหลายคน ข่าวดีคือทักษะนี้สามารถฝึกฝนให้เก่งได้ ด้วยความรู้ความเข้าใจและทฤษฎีที่ถูกต้อง ในคอร์สนี้คุณจะได้เรียนรู้ทักษะการนำเสนอและการต่อรองอย่างเป็นระบบ คุณจะรู้ว่าจะต้องเตรียมตัวอย่างไร วางแผนกลยุทธ์อย่างไร และปฏิบัติตนอย่างไร เพื่อสร้างผลงานการนำเสนอและการต่อรองที่ดี\n
     
@@ -210,13 +240,8 @@ export const ContentDetailCourse = (props) => {
               size={'large'}
             >
               <TabPane tab={'รายละเอียด'} key={1}>
-                <p>
-                  {
-                    courseDetail
-                  }
-                </p>
+                <p>{courseDetail}</p>
               </TabPane>
-
               {isExtraLargeDesktop
                 ? [
                     <TabPane tab={'วิธีการชำระเงิน'} key={2}>
@@ -244,12 +269,28 @@ export const ContentDetailCourse = (props) => {
         </Col>
         {isExtraLargeDesktop ? (
           <Col xl={6} md={24}>
-            <CourseInstructorCard>
-              <CourseInstructorCardTitle>ผู้สอน</CourseInstructorCardTitle>
-            </CourseInstructorCard>
-            {instructors.map((instructor, idx) => {
-              return <Instructor instructor={instructor} key={idx} />
-            })}
+            <Row>
+              <Col>
+                <CourseInstructorCard>
+                  <CourseInstructorCardTitle>ผู้สอน</CourseInstructorCardTitle>
+                </CourseInstructorCard>
+                {instructors.map((instructor, idx) => {
+                  return <Instructor instructor={instructor} key={idx} />
+                })}
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <CourseInstructorCard>
+                  <CourseInstructorCardTitle>
+                    คอร์สที่เกี่ยวข้อง
+                  </CourseInstructorCardTitle>
+                </CourseInstructorCard>
+                {courses.map((course, idx) => {
+                  return <CourseRelate course={course} key={idx} />
+                })}
+              </Col>
+            </Row>
           </Col>
         ) : null}
       </Row>
