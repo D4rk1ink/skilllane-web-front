@@ -116,7 +116,7 @@ export const ContentCourse = (props) => {
                           >
                             <Col>
                               <PurchasePrice>
-                                {numberWithCommas(couse.price)}
+                                {numberWithCommas(couse.price)} บาท
                               </PurchasePrice>
                             </Col>
                           </Row>
