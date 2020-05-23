@@ -95,6 +95,7 @@ export const CourseRelateDetailWrapper = styled.div`
 
 export const CourseRelateWrapper = styled.div`
   padding: 5px;
+  margin-bottom: 5px;
   border-radius: 4px;
   background: #f2f8fa;
   cursor: pointer;
