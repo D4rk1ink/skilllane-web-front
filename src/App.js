@@ -6,7 +6,7 @@ import './App.css'
 import { Course } from './containers/Course'
 
 const routing = () => (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <div>
       <Route path={'/courses'} component={Course} />
       <Redirect to={'/courses'} />
