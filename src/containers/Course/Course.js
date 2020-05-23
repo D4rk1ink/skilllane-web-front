@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import { Container } from 'reactstrap'
 import { Row, Col } from 'antd'
+import { Helmet } from 'react-helmet'
 
 import { BannerCourseDetail } from '../../components/BannerCourseDetail'
 import { ContentCourse } from '../../components/ContentCourse'
 import { ContentDetailCourse } from '../../components/ContentDetailCourse'
 
 const course = {
+  meta: {
+    title: 'คอร์สปริญญาโทออนไลน์ Pitching and Negotiation การนำเสนอและการต่อรอง'
+  },
   rating: 4.5,
   reviewed: 485,
   degree: 'ปริญญาโทบริหารธุรกิจ สาขา Business Innovation',
@@ -82,38 +86,41 @@ const course = {
 export class Course extends Component {
   render() {
     return (
-      <Container fluid={true} style={{ padding: '0px 0px' }}>
-        <Row gutter={[0, 20]}>
-          <Col span={24}>
-            <BannerCourseDetail
-              title={course.title}
-              degree={course.degree}
-              degreeHref={course.degreeHref}
-              syllabus={course.syllabus}
-              syllabusImage={course.syllabusImage}
-              rating={course.rating}
-              reviewed={course.reviewed}
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col span={24}>
-            <ContentCourse
-              videoPreview={course.videoPreview}
-              editions={course.editions}
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col span={24}>
-            <ContentDetailCourse
-              detail={course.detail}
-              relatedCourses={course.relatedCourses}
-              instructors={course.instructors}
-            />
-          </Col>
-        </Row>
-      </Container>
+      <>
+        <Helmet><title>{course.meta.title}</title></Helmet>
+        <Container fluid={true} style={{ padding: '0px 0px' }}>
+          <Row gutter={[0, 20]}>
+            <Col span={24}>
+              <BannerCourseDetail
+                title={course.title}
+                degree={course.degree}
+                degreeHref={course.degreeHref}
+                syllabus={course.syllabus}
+                syllabusImage={course.syllabusImage}
+                rating={course.rating}
+                reviewed={course.reviewed}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col span={24}>
+              <ContentCourse
+                videoPreview={course.videoPreview}
+                editions={course.editions}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col span={24}>
+              <ContentDetailCourse
+                detail={course.detail}
+                relatedCourses={course.relatedCourses}
+                instructors={course.instructors}
+              />
+            </Col>
+          </Row>
+        </Container>
+      </>
     )
   }
 }

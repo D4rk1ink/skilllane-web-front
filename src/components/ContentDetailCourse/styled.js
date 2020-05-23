@@ -56,7 +56,7 @@ export const InstructorName = styled.div`
   cursor: pointer;
 `
 
-export const InstructorDetailUl = styled.li`
+export const InstructorDetailUl = styled.ul`
   padding-top: 12px;
   padding-left: 24px;
 `
