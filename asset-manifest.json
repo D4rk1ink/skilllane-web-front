@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/skilllane/static/css/main.11981955.chunk.css",
+    "main.js": "/skilllane/static/js/main.024a7673.chunk.js",
+    "main.js.map": "/skilllane/static/js/main.024a7673.chunk.js.map",
+    "runtime-main.js": "/skilllane/static/js/runtime-main.5e9dfa25.js",
+    "runtime-main.js.map": "/skilllane/static/js/runtime-main.5e9dfa25.js.map",
+    "static/css/2.cbeea887.chunk.css": "/skilllane/static/css/2.cbeea887.chunk.css",
+    "static/js/2.efce0b16.chunk.js": "/skilllane/static/js/2.efce0b16.chunk.js",
+    "static/js/2.efce0b16.chunk.js.map": "/skilllane/static/js/2.efce0b16.chunk.js.map",
+    "index.html": "/skilllane/index.html",
+    "precache-manifest.9b7ebf878a278a340655f6f7b11b9f1a.js": "/skilllane/precache-manifest.9b7ebf878a278a340655f6f7b11b9f1a.js",
+    "service-worker.js": "/skilllane/service-worker.js",
+    "static/css/2.cbeea887.chunk.css.map": "/skilllane/static/css/2.cbeea887.chunk.css.map",
+    "static/css/main.11981955.chunk.css.map": "/skilllane/static/css/main.11981955.chunk.css.map",
+    "static/js/2.efce0b16.chunk.js.LICENSE.txt": "/skilllane/static/js/2.efce0b16.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/skilllane/static/media/ThaiSansNeue-Regular.092b215e.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5e9dfa25.js",
+    "static/css/2.cbeea887.chunk.css",
+    "static/js/2.efce0b16.chunk.js",
+    "static/css/main.11981955.chunk.css",
+    "static/js/main.024a7673.chunk.js"
+  ]
+}
