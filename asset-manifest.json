@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/skilllane-web-front/static/css/main.e29a99f8.chunk.css",
-    "main.js": "/skilllane-web-front/static/js/main.56595d56.chunk.js",
-    "main.js.map": "/skilllane-web-front/static/js/main.56595d56.chunk.js.map",
+    "main.js": "/skilllane-web-front/static/js/main.7e5e24c6.chunk.js",
+    "main.js.map": "/skilllane-web-front/static/js/main.7e5e24c6.chunk.js.map",
     "runtime-main.js": "/skilllane-web-front/static/js/runtime-main.df27653a.js",
     "runtime-main.js.map": "/skilllane-web-front/static/js/runtime-main.df27653a.js.map",
     "static/css/2.cbeea887.chunk.css": "/skilllane-web-front/static/css/2.cbeea887.chunk.css",
     "static/js/2.26f872f9.chunk.js": "/skilllane-web-front/static/js/2.26f872f9.chunk.js",
     "static/js/2.26f872f9.chunk.js.map": "/skilllane-web-front/static/js/2.26f872f9.chunk.js.map",
     "index.html": "/skilllane-web-front/index.html",
-    "precache-manifest.5e90d3ec014546cbbaa7216df9a503a7.js": "/skilllane-web-front/precache-manifest.5e90d3ec014546cbbaa7216df9a503a7.js",
+    "precache-manifest.75ab07ee1cd757209a5c99199c858e29.js": "/skilllane-web-front/precache-manifest.75ab07ee1cd757209a5c99199c858e29.js",
     "service-worker.js": "/skilllane-web-front/service-worker.js",
     "static/css/2.cbeea887.chunk.css.map": "/skilllane-web-front/static/css/2.cbeea887.chunk.css.map",
     "static/css/main.e29a99f8.chunk.css.map": "/skilllane-web-front/static/css/main.e29a99f8.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.cbeea887.chunk.css",
     "static/js/2.26f872f9.chunk.js",
     "static/css/main.e29a99f8.chunk.css",
-    "static/js/main.56595d56.chunk.js"
+    "static/js/main.7e5e24c6.chunk.js"
   ]
 }
