@@ -22,6 +22,9 @@ export const SubHeaderIcon = styled.span`
   width: 55px;
   height: 12px;
   color: #d13434;
+  img {
+    width: 100%;
+  }
 `
 
 export const SubHeaderText = styled.span`
