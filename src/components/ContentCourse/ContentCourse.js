@@ -84,7 +84,7 @@ export const ContentCourse = (props) => {
         <Col xl={12} md={24} style={{ paddingBottom: '30px' }}>
           <VideContainer>
             <VideBackground>
-              <img src={videoPreview} />
+              <img alt={videoPreview} src={videoPreview} />
             </VideBackground>
           </VideContainer>
         </Col>

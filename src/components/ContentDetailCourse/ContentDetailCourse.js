@@ -49,9 +49,6 @@ const PlayIcon = () => {
 }
 
 const Instructor = ({ instructor }) => {
-  const isExtraLargeDesktop = useMediaQuery({
-    query: '(min-width: 1200px)',
-  })
   const subs = [
     {
       icon: StarIcon,
@@ -85,7 +82,7 @@ const Instructor = ({ instructor }) => {
         <Col>
           <InstructorHeaderWrapper>
             <InstructorImage>
-              <img src={instructor.img} />
+              <img alt={instructor.name} src={instructor.img} />
             </InstructorImage>
             <div>
               <Row>
@@ -118,7 +115,7 @@ const CourseRelate = ({ course }) => {
     <CourseRelateWrapper>
       <Row gutter={8}>
         <Col md={12}>
-          <img src={course.img} style={{ width: '100%' }} />
+          <img alt={course.title} src={course.img} style={{ width: '100%' }} />
         </Col>
         <Col md={12}>
           <CourseRelateDetailWrapper>

@@ -45,6 +45,7 @@ const Stars = ({ rating }) => {
             <Col key={idx}>
               <Star>
                 <img
+                  alt={'Star'}
                   src={
                     'https://www.skilllane.com/assets/raty/star-filled-625a2874bb73bbd9bc05639104f21c4e5563a3a5f3b933180ff4be08adeb9aad.svg'
                   }
@@ -62,7 +63,7 @@ const SubHeader = ({ syllabus, syllabusImage }) => {
   return (
     <SubHeaderWrapper>
       <SubHeaderIcon>
-        <img src={syllabusImage} />
+        <img alt={syllabus} src={syllabusImage} />
       </SubHeaderIcon>
       <SubHeaderText>{syllabus}</SubHeaderText>
     </SubHeaderWrapper>
