@@ -7,6 +7,7 @@ import {
   TabsWrapper,
   IconWrapper,
   TitleWrapper,
+  InstructorHeaderWrapper,
   InstructorImage,
   InstructorName,
   InstructorSubText,
@@ -65,10 +66,10 @@ const Instructor = ({ instructor }) => {
       text: `${instructor.totalCourse} คอร์ส`,
     },
   ]
-  const Subs = subs.map((sub) => {
+  const Subs = subs.map((sub, idx) => {
     const Icon = sub.icon
     return (
-      <Row gutter={[8, 4]}>
+      <Row gutter={[8, 4]} key={idx}>
         <Col>
           <Icon />
         </Col>
@@ -81,27 +82,29 @@ const Instructor = ({ instructor }) => {
   return (
     <TitleWrapper>
       <Row gutter={[8, 0]}>
-        <Col lg={isExtraLargeDesktop ? 10 : 3}>
-          <InstructorImage>
-            <img src={instructor.img} />
-          </InstructorImage>
-        </Col>
-        <Col lg={isExtraLargeDesktop ? 14 : 21}>
-          <Row>
-            <Col>
-              <InstructorName>{instructor.name}</InstructorName>
-            </Col>
-          </Row>
-          <Row>
-            <Col>{Subs}</Col>
-          </Row>
+        <Col>
+          <InstructorHeaderWrapper>
+            <InstructorImage>
+              <img src={instructor.img} />
+            </InstructorImage>
+            <div>
+              <Row>
+                <Col>
+                  <InstructorName>{instructor.name}</InstructorName>
+                </Col>
+              </Row>
+              <Row>
+                <Col>{Subs}</Col>
+              </Row>
+            </div>
+          </InstructorHeaderWrapper>
         </Col>
       </Row>
       <Row>
         <Col>
           <InstructorDetailUl>
             {instructor.details.map((detail, idx) => {
-              return <InstructorDetailLi>{detail}</InstructorDetailLi>
+              return <InstructorDetailLi key={idx}>{detail}</InstructorDetailLi>
             })}
           </InstructorDetailUl>
         </Col>

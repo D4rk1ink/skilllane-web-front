@@ -40,15 +40,26 @@ export const TitleWrapper = styled.div`
   }
 `
 
+export const InstructorHeaderWrapper = styled.div`
+  display: flex;
+  > div:nth-child(2) {
+    flex: 1;
+    margin-left: 10px;
+  }
+`
+
 export const InstructorImage = styled.div`
   border-radius: 100%;
   overflow: hidden;
+  width: 110px;
+  height: 110px;
   img {
     width: 100%;
   }
 `
 
 export const InstructorName = styled.div`
+  margin-bottom: 5px;
   color: #00532a;
   font-weight: bold;
   font-size: 1em;
