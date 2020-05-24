@@ -3,7 +3,7 @@ import React from 'react'
 export const SocialShareSVG = () => {
   return (
     <svg
-      class="svg-inline--fa fa-share-alt fa-w-14"
+      className="svg-inline--fa fa-share-alt fa-w-14"
       aria-hidden="true"
       focusable="false"
       data-prefix="far"
@@ -24,7 +24,7 @@ export const SocialShareSVG = () => {
 export const CheckSVG = () => {
   return (
     <svg
-      class="svg-inline--fa fa-check fa-w-16"
+      className="svg-inline--fa fa-check fa-w-16"
       aria-hidden="true"
       focusable="false"
       data-prefix="far"
@@ -45,7 +45,7 @@ export const CheckSVG = () => {
 export const TimesSVG = () => {
   return (
     <svg
-      class="svg-inline--fa fa-times fa-w-10"
+      className="svg-inline--fa fa-times fa-w-10"
       aria-hidden="true"
       focusable="false"
       data-prefix="far"
@@ -66,7 +66,7 @@ export const TimesSVG = () => {
 export const StarSVG = () => {
   return (
     <svg
-      class="svg-inline--fa fa-star fa-w-18"
+      className="svg-inline--fa fa-star fa-w-18"
       aria-hidden="true"
       focusable="false"
       data-prefix="fa"
@@ -87,7 +87,7 @@ export const StarSVG = () => {
 export const CommentSVG = () => {
   return (
     <svg
-      class="svg-inline--fa fa-comment fa-w-16"
+      className="svg-inline--fa fa-comment fa-w-16"
       aria-hidden="true"
       focusable="false"
       data-prefix="fa"
@@ -108,7 +108,7 @@ export const CommentSVG = () => {
 export const PlaySVG = () => {
   return (
     <svg
-      class="svg-inline--fa fa-play-circle fa-w-16"
+      className="svg-inline--fa fa-play-circle fa-w-16"
       aria-hidden="true"
       focusable="false"
       data-prefix="fa"
