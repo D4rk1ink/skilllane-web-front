@@ -31,7 +31,6 @@ const SocialShareButton = () => {
 
 const Stars = ({ rating }) => {
   const rest = +rating - Math.floor(+rating)
-  console.log()
   const arr = Array(Math.floor(+rating)).fill(100)
   if (rest > 0) {
     arr.push(rest * 100)
@@ -42,7 +41,6 @@ const Stars = ({ rating }) => {
         .fill(null)
         .map((v, idx) => {
           const p = 22 - (arr[idx] / 100) * 22
-          console.log(arr[idx])
           return (
             <Col key={idx}>
               <Star>
